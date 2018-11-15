@@ -1,10 +1,16 @@
 public class Book {
     private String name = "";
-    public Book(String name){
+    private int index = 0;
+    public Book(String name, int index){
         this.name = name;
+        this.index = index;
     }
 
     public String getName(){
         return name;
+    }
+
+    public int getIndex(){
+        return index;
     }
 }

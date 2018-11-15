@@ -15,7 +15,12 @@ public class Main {
                 "\nBook Name    : " + book.getName() + "\n");
         }
 
-
+        while(it.hasPrevious() ){
+            Book book = (Book) it.previous();
+            System.out.println(
+                "\nBook Index   : " + book.getIndex() +
+                "\nBook Name    : " + book.getName() + "\n");
+        }
 
 
 

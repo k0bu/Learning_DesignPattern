@@ -7,6 +7,18 @@ public class BookShelfIterator implements Iterator {
         this.index = 0;
     }
 
+    public void indexToFirst(){
+        index = 0;
+    }
+    public void indexToLast(){
+        index = bookShelf.getLength();
+    }
+
+
+    public Object getBookAt(int index){
+        return bookShelf.getBookAt(index);
+    }
+
     public boolean hasNext(){
         if(index < bookShelf.getLength() ){
             return true;

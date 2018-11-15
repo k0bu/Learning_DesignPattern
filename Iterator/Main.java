@@ -8,22 +8,39 @@ public class Main {
         bookShelf.appendBook(new Book("Third Book", bookShelf.getLength() ) );
 
         Iterator it = bookShelf.iterator();
-        while(it.hasNext() ){
-            Book book = (Book) it.next();
-            System.out.println(
-                "\nBook Index   : " + book.getIndex() +
-                "\nBook Name    : " + book.getName() + "\n");
-        }
 
-        while(it.hasPrevious() ){
-            Book book = (Book) it.previous();
-            System.out.println(
-                "\nBook Index   : " + book.getIndex() +
-                "\nBook Name    : " + book.getName() + "\n");
-        }
+        listBookShelfAscendingO(it);
+
+        it.indexToFirst();
+
+        listBookShelfAscendingO(it);
+
+        listBookShelfDescendingO(it);
+
+        it.indexToLast();
+
+        listBookShelfDescendingO(it);
 
 
 
         System.out.println("\n--------END MAIN--------\n");
+    }
+
+    private static void listBookShelfAscendingO(Iterator iterator){
+        while(iterator.hasNext() ){
+            Book book = (Book) iterator.next();
+            System.out.println(
+                "\nBook Index   : " + book.getIndex() +
+                "\nBook Name    : " + book.getName() + "\n");
+        }
+    }
+
+    private static void listBookShelfDescendingO(Iterator iterator){
+        while(iterator.hasPrevious() ){
+            Book book = (Book) iterator.previous();
+            System.out.println(
+                "\nBook Index   : " + book.getIndex() +
+                "\nBook Name    : " + book.getName() + "\n");
+        }
     }
 }

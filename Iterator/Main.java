@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("\n--------BEGIN MAIN--------\n");
 
-        BookShelf bookShelf = new BookShelf(4);
+        BookShelf bookShelf = new BookShelf();
         bookShelf.appendBook(new Book("First Book", bookShelf.getLength() ) );
         bookShelf.appendBook(new Book("Second Book", bookShelf.getLength() ) );
         bookShelf.appendBook(new Book("Third Book", bookShelf.getLength() ) );

@@ -1,5 +1,3 @@
-import java.util.Vector;
-
 public class BookShelfIterator implements Iterator {
     private BookShelf bookShelf;
     private int index;

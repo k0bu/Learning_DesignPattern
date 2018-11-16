@@ -3,19 +3,22 @@ import framework.*;
 import java.util.*;
 
 public class IDCardFactory extends Factory {
-    private Vector owners = new Vector();
-    protected Product createProduct (String owner){
-        return new IDCard(owner);
+    private Hashtable database = new Hashtable();
+    private int index = 0;
+
+    protected synchronized Product createProduct (String owner){
+        return new IDCard(owner, index++);
 
     }
 
     protected void registerProduct (Product product){
-        owners.add( ((IDCard)product).getOwner());
+        IDCard card = (IDCard) product;
+        database.put(card.getOwner(), card.getIndex() );
     
     }
 
-    public Vector getOwners(){
-        return owners;
+    public Hashtable getOwners(){
+        return database;
         
     }
 }

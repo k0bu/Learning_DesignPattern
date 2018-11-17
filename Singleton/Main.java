@@ -11,6 +11,14 @@ public class Main {
             System.out.println("obj1 and obj2 is not same instance.");
         }
 
+        for(int i = 0; i < 10 ; i++){
+            System.out.println(i + ": " + Triple.getInstance(i%3) );
+            System.out.println(i + ": " + TicketMaker.getInstance().getNextTicketNumber() );
+        }
+
+        
+        
+
         System.out.println("End.");
 
     }

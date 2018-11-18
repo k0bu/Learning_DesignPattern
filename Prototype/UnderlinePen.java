@@ -1,6 +1,6 @@
 import framework.*;
 
-public class UnderlinePen implements Product{
+public class UnderlinePen extends Product{
     private char ulchar;
     public UnderlinePen(char ulchar){
         this.ulchar = ulchar;
@@ -21,16 +21,16 @@ public class UnderlinePen implements Product{
 
     }
 
-    public Product createClone(){
-        Product p = null;
+    // public Product createClone(){
+    //     Product p = null;
 
-        try{
-            p = (Product) clone();
+    //     try{
+    //         p = (Product) clone();
     
-        } catch(CloneNotSupportedException e){
-            e.printStackTrace();
+    //     } catch(CloneNotSupportedException e){
+    //         e.printStackTrace();
 
-        }
-        return p;
-    }
+    //     }
+    //     return p;
+    // }
 }

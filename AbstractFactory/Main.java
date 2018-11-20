@@ -12,14 +12,28 @@ public class Main {
 
         Factory factory = Factory.getFactory(args[0]);
 
+        Link sekaiju = factory.createLink("Sekaiju", "sekaiju url");
+        Link etrian = factory.createLink("Etrian Odyssey", "etrian odyssey url");
+
+        Link yahoo_us = factory.createLink("YahooUS", "https://www.yahoo.com/");
+        Link yahoo_jp = factory.createLink("YahooJP", "https://www.yahoo.co.jp/");
+        
         Link google = factory.createLink("Google", "https://www.google.com/");
-        Link yahoo = factory.createLink("Yahoo", "https://www.yahoo.co.jp/");
+        
+        Tray trayRPG = factory.createTray("RPG games");
+        trayRPG.add(sekaiju);
+        trayRPG.add(etrian);
+
+        Tray trayYahoo = factory.createLink("Yahoo");
+        trayYahoo.add(yahoo_us);
+        trayYahoo.add(yahoo_jp);
 
         Tray traySearchEngine = factory.createTray("Search Engine");
-        traynews.add(google);
-        traynews.add(yahoo);
+        traySearchEngine.add(trayYahoo);
+        traySearchEngine.add(google);
 
         Page page = factory.createPage("LinkPage", "k0bu");
+        page.add(trayRPG);
         page.add(traySearchEngine);
         page.output();
 

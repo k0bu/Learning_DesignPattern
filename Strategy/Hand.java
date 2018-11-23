@@ -14,7 +14,7 @@ public class Hand {
     };
 
     private int handValue;
-    private Hand(int handvalue) {
+    private Hand(int handValue) {
         this.handValue = handValue;
 
     }
@@ -49,6 +49,6 @@ public class Hand {
 
     public String toString() {
         return name[handValue];
-        
+
     }
 }

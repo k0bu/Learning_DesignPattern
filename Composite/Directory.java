@@ -10,6 +10,10 @@ public class Directory extends Entry {
 
     }
 
+    public String getName(){
+        return name;
+    }
+
     public int getSize(){
         int size = 0;
         Iterator it = directory.iterator();

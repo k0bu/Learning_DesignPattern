@@ -1,5 +1,5 @@
 public abstract class Entry {
-    public abstract Sting getName();
+    public abstract String getName();
     public abstract int getSize();
 
     public Entry add (Entry entry) throws FileTreatmentException {
@@ -12,11 +12,12 @@ public abstract class Entry {
 
     }
 
+    //overload 多重定義, argument class dependence
     protected abstract void printList(String prefix);
 
     public String toString(){
         return getName() + " (" + getSize() + ")";
 
     }
-    
+
 }

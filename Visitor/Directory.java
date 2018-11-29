@@ -3,7 +3,7 @@ import java.util.Vector;
 
 public class Directory extends Entry {
     private String name;
-    private Vector dir = new Vecotr();
+    private Vector dir = new Vector();
 
     public Directory (String name){
         this.name = name;
@@ -20,7 +20,7 @@ public class Directory extends Entry {
         Iterator it = dir.iterator();
 
         while(it.hasNext()){
-            Entry entry = (Entry)it.nex();
+            Entry entry = (Entry)it.next();
             size += entry.getSize();
 
         }

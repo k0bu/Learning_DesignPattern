@@ -17,7 +17,7 @@ public class Main{
 
             rootDir.accept(new ListVisitor());
 
-            
+            System.out.println("");
 
         } catch (FileTreatmentException e){
             e.printStackTrace();

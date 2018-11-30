@@ -1,5 +1,5 @@
 package listfactory;
-import facotry.*;
+import factory.*;
 
 /**
  * ListLink

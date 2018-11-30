@@ -1,4 +1,6 @@
-public class Main{
+package Delegate;
+
+public class MainDelegate {
     public static void main(String[] args) {
         Print p = new PrintBanner("Hello");
         p.printWeak();

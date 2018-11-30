@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Main{
+public class MainAdapter {
     public static void main(String[] args) {
         FileIO f = new FileProperties();
 

@@ -1,6 +1,6 @@
 import factory.*;
 
-public class Main {
+public class MainAbstractFactory {
     public static void main(String[] args) {
         if(args.length != 1) {
             System.out.println("Usage: java Main class.name.of.ConcreteFactory");
@@ -24,7 +24,7 @@ public class Main {
         trayRPG.add(sekaiju);
         trayRPG.add(etrian);
 
-        Tray trayYahoo = factory.createLink("Yahoo");
+        Tray trayYahoo = factory.createTray("Yahoo");
         trayYahoo.add(yahoo_us);
         trayYahoo.add(yahoo_jp);
 

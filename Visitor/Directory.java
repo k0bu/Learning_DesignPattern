@@ -35,7 +35,7 @@ public class Directory extends Entry {
 
     }
 
-    public Iterator iteraotr() {
+    public Iterator iterator() {
         return dir.iterator();
 
     }

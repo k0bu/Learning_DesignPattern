@@ -1,7 +1,7 @@
 /**
  * Main
  */
-public class Main {
+public class MainBridge {
     public static void main(String[] args) {
         Display d1 = new Display(new StringDisplayImpl("Hello World.") );
         Display d2 = new CountDisplay(new StringDisplayImpl("Hello World Second") );

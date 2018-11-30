@@ -1,3 +1,5 @@
+package Delegate;
+
 public class Banner{
     private String string;
     public Banner(String string){

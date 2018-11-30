@@ -23,7 +23,7 @@ public class ListPage extends Page {
         }
 
         buffer.append("</ul>\n");
-        buffer.append("<hr><address>" + autho + "</address>");
+        buffer.append("<hr><address>" + author + "</address>");
         buffer.append("</body></html>\n");
 
         return buffer.toString();

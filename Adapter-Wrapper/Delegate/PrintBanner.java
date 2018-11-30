@@ -1,3 +1,5 @@
+package Delegate;
+
 public class PrintBanner extends Print{
     private Banner banner;
 

@@ -1,4 +1,4 @@
-public class Main{
+public class MainVisitor{
     public static void main(String[] args) {
         try {
             System.out.println("Making root entries...");

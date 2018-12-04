@@ -20,7 +20,7 @@ public class Hand {
     }
 
     public static Hand getHand (int handValue) {
-        return hand[handvalue];
+        return hand[handValue];
 
     }
 

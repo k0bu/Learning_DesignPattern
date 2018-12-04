@@ -1,6 +1,6 @@
 import framework.*;
 
-public class Main{
+public class MainPrototype {
     public static void main(String[] args) {
         Manager manager = new Manager();
         UnderlinePen upen = new UnderlinePen('~');

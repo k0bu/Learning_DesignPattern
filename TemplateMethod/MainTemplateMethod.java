@@ -1,4 +1,4 @@
-public class Main{
+public class MainTemplateMethod{
     public static void main(String[] args) {
         AbstractDisplay charDsp = new CharDisplay('H');
         AbstractDisplay strDsp = new StringDisplay("Hello World!");

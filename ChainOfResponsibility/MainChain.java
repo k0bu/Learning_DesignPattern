@@ -1,4 +1,4 @@
-public class Main {
+public class MainChain {
     public static void main (String[] args){
         Support alice = new NoSupport("Alice");
         Support bob = new LimitSupport("bob", 100);

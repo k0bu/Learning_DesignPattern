@@ -1,4 +1,4 @@
-public class Main {
+public class MainComposite {
     public static void main(String[] args) {
         try {
             System.out.println("Making root entries..");
